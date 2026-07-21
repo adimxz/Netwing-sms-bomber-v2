@@ -1,11 +1,11 @@
-# ReTeKZ - SMS Bomber Tool
+# Netwing - SMS Bomber Tool
 
 ⚠️ **Bu tool sadece eğitim amaçlıdır! İzinsiz kullanım yasaktır.**
 
 ## 📥 Kurulum
 
 ```bash
-git clone https://github.com/adimxz/adimxz.Net.git
-cd adimxz.Net
+git clone https://github.com/adimxz/Netwing-sms-bomber-v2.git
+cd Netwing-sms-bomber-v2
 pip install -r requirements.txt
-python3 adimxz.Net.py
+python3 Netwing-sms-bomber-v2.py
