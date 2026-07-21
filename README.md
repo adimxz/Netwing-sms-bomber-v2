@@ -5,7 +5,7 @@
 ## 📥 Kurulum
 
 ```bash
-git clone https://github.com/adimxz/ReTeKZ.git
-cd ReTeKZ
+git clone https://github.com/adimxz/adimxz.Net.git
+cd adimxz.Net
 pip install -r requirements.txt
-python3 ReTeKZ.py
+python3 adimxz.Net.py
